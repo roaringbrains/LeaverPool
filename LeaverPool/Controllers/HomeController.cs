@@ -10,6 +10,10 @@ namespace LeaverPool.Controllers
 {
     public class HomeController : Controller
     {
+        public IActionResult Main()
+        {
+            return View();
+        }
         public IActionResult Index()
         {
             return View();

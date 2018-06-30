@@ -247,7 +247,7 @@ namespace LeaverPool.Controllers
         {
             await _signInManager.SignOutAsync();
             _logger.LogInformation("User logged out.");
-            return RedirectToAction(nameof(HomeController.Index), "Home");
+            return RedirectToAction(nameof(HomeController.Main), "Home");
         }
 
         [HttpPost]
